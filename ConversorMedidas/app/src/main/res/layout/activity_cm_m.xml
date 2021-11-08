@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CmM">
+
+    <Button
+        android:id="@+id/btnConv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="35dp"
+        android:text="Converter"
+        app:layout_constraintEnd_toEndOf="@+id/edtM4"
+        app:layout_constraintTop_toBottomOf="@+id/edtM4" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="13dp"
+        android:text="Metros:"
+        app:layout_constraintBottom_toTopOf="@+id/edtM4"
+        app:layout_constraintStart_toStartOf="@+id/edtM4" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="13dp"
+        android:text="Centímetros:"
+        app:layout_constraintBottom_toTopOf="@+id/edtCm2"
+        app:layout_constraintStart_toStartOf="@+id/edtCm2" />
+
+    <EditText
+        android:id="@+id/edtCm2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="199dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtM4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/edtCm2"
+        app:layout_constraintTop_toBottomOf="@+id/edtCm2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
